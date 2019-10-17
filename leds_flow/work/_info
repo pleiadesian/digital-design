@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1
+vleds
+!i10b 1
+!s100 DaC`C9m9LHi>9b;0dMd6l2
+IOl67f8KU??F5G1m_8PMbn1
+V[T<ROOVDW6Sg>iYYkzB1;2
+Z1 dC:\fpga\leds_flow
+w1571315910
+8C:/fpga/leds_flow/leds.v
+FC:/fpga/leds_flow/leds.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1571315910.391000
+!s107 C:/fpga/leds_flow/leds.v|
+!s90 -reportprogress|300|-work|work|C:/fpga/leds_flow/leds.v|
+!s101 -O0
+Z3 o-work work -O0
+vleds_flow
+Z4 Ijc:XQ[_=U;G5ZJ^@Y0S@A1
+Z5 VePS8MI;mmQ<]]S:hAg>zV1
+R1
+Z6 w1571315909
+Z7 8C:/fpga/leds_flow/leds_flow.v
+Z8 FC:/fpga/leds_flow/leds_flow.v
+L0 8
+R2
+r1
+31
+R3
+!i10b 1
+Z9 !s100 5PZ>;MH=0@U6b^D>3oYEa3
+!s85 0
+Z10 !s108 1571315909.489000
+Z11 !s107 C:/fpga/leds_flow/leds_flow.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/fpga/leds_flow/leds_flow.v|
+!s101 -O0

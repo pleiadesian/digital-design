@@ -1,0 +1,15 @@
+C:/fpga/leds_flow/leds_flow.v {1 {vlog -work work C:/fpga/leds_flow/leds_flow.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module leds_flow
+
+Top level modules:
+	leds_flow
+
+} {} {}} C:/fpga/leds_flow/leds.v {1 {vlog -work work C:/fpga/leds_flow/leds.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module leds
+
+Top level modules:
+	leds
+
+} {} {}}
