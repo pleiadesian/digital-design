@@ -579,10 +579,6 @@ applicable agreement for further details.
 	(pt 1440 608)
 )
 (connector
-	(pt 1256 624)
-	(pt 1432 624)
-)
-(connector
 	(pt 1040 544)
 	(pt 1032 544)
 )
@@ -603,10 +599,6 @@ applicable agreement for further details.
 	(pt 1016 512)
 )
 (connector
-	(pt 1256 640)
-	(pt 1424 640)
-)
-(connector
 	(pt 840 568)
 	(pt 848 568)
 )
@@ -621,54 +613,6 @@ applicable agreement for further details.
 (connector
 	(pt 840 760)
 	(pt 848 760)
-)
-(connector
-	(pt 800 904)
-	(pt 872 904)
-)
-(connector
-	(pt 800 784)
-	(pt 800 904)
-)
-(connector
-	(pt 1448 888)
-	(pt 1040 888)
-)
-(connector
-	(pt 1448 776)
-	(pt 1448 888)
-)
-(connector
-	(pt 1488 904)
-	(pt 1040 904)
-)
-(connector
-	(pt 1488 816)
-	(pt 1488 904)
-)
-(connector
-	(pt 760 784)
-	(pt 800 784)
-)
-(connector
-	(pt 800 784)
-	(pt 832 784)
-)
-(connector
-	(pt 1432 776)
-	(pt 1448 776)
-)
-(connector
-	(pt 1448 776)
-	(pt 1512 776)
-)
-(connector
-	(pt 1424 816)
-	(pt 1488 816)
-)
-(connector
-	(pt 1488 816)
-	(pt 1512 816)
 )
 (connector
 	(pt 816 568)
@@ -734,9 +678,10 @@ applicable agreement for further details.
 	(pt 840 664)
 	(pt 840 568)
 )
-(junction (pt 800 784))
-(junction (pt 1448 776))
-(junction (pt 1488 816))
+(connector
+	(pt 760 784)
+	(pt 832 784)
+)
 (junction (pt 840 456))
 (junction (pt 840 568))
 (junction (pt 840 664))
