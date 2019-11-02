@@ -81,6 +81,11 @@ module stopwatch_01(clk,key_reset,key_start_pause,key_display_stop,
 						display_1_time <=0;
 						counter_display <= 0;
 						
+						led0 <= 1;
+						led1 <= 1;
+						led2 <= 0;
+						led3 <= 0;
+						
 						start <= 0;
 						display <= 0;
 			end
@@ -99,11 +104,13 @@ module stopwatch_01(clk,key_reset,key_start_pause,key_display_stop,
 			always @ (negedge key_start_pause) // change counter state
 						begin
 									counter_work <= ~counter_work;
+									led1 <= ~led1;
 						end
 						
 			always @ (negedge key_display_stop) // change display state
 						begin
 									display_work <= ~display_work;
+									led0 <= ~led0;
 						end
 			
 			always @ (posedge clk) // 每一个时钟上升沿开始触发下面的逻辑，
