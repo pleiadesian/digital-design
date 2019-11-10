@@ -310,41 +310,55 @@ module debounce(clk, key_in, key_out);
 	reg		key_out;
 	
 	// counter during debounce procedure
-	reg cnt;
+	reg [31:0] cnt;
 	reg key_valid;
+	reg key_invalid;
+	reg key_temp;
 	
 	// debounce for 500000 * 20ns = 10ms
 	localparam DEBOUNCE_TIME = 500_000;
 	
 	initial begin
 		key_valid <= 1;
+		key_invalid <= 0;
 		cnt <= 0;
+		key_temp <= 1;
 	end
 	
 	// output key value after debounce finished
 	always @ (posedge clk)
 		begin
-			if (~key_valid) begin
-				cnt <= cnt + 1;
+			if (key_invalid) begin
+				key_valid <= 0;
 			end
+			if (key_valid) 
+				begin
+					key_out <= key_in;
+					key_temp <= key_in;
+				end
+			else
+				begin
+					cnt <= cnt + 1;
+					key_out <= key_temp;
+					if (cnt > 500000) begin
+						key_valid <= 1;
+						cnt <= 0;
+					end
+				end
 		end
 	always @ (negedge key_in)
 		begin
 			if (key_valid) begin
-				key_valid <= 0;
+				key_invalid <= 1;
 			end
-			if (~key_valid) begin
-				if (cnt > 500000) begin
-					key_valid <= 1;
-					key_out <= key_in;
-					cnt <= 0;
-				end
+			else begin
+				key_invalid <= 0;
 			end
 		end
 endmodule
 ```
 
-该消抖器中设计了一个周期为10ms的计时器。当按键按下时计时器启动；10ms结束时，将按键结果输出。在10ms以内的抖动结果不会被输出，达到消抖效果。
+该消抖器中设计了一个周期为10ms的计时器。当按键按下时计时器启动；10ms期间，输出结果为计时开始时的按键状态；10ms结束时，将按键结果输出。在10ms以内的抖动结果不会被输出，达到消抖效果。
 
 
 
@@ -361,6 +375,7 @@ endmodule
 1. verilog的阻塞赋值语句(=)与非阻塞赋值语句(<=)应区分清楚。不能在同一个always语句块中同时使用=和<=进行赋值。
 2. 由于同一个always语句块的多个非阻塞赋值语句没有先后之分，并行执行。在always语句块中进行条件判断的时候不应用串行执行语句的方式写逻辑，而应该考虑上一次结束always语句块的状态。
 3. 在本次秒表的设计中，将板载50MHz时钟转化为周期10ms的时钟的逻辑写在main模块中，存在一定耦合。实际上应该把时钟周期的转换单独列出一个模块，在顶层设计中进行连接，逻辑上更加合理。
+4. 设计消抖器时，一开始只用一个key_valid在按键按下的always语句块和clock的always语句块进行消息传递，导致编译错误。之后引入了两个寄存器作为两个always语句的消息传递寄存器，解决了该问题。由此可见不能在两个模块同时对一个寄存器进行写操作。
 
 ##### 感受
 
