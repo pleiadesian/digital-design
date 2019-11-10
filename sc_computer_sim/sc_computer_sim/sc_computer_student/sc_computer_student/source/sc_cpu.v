@@ -10,15 +10,15 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data);
    wire [1:0]    pcsource;
    wire          zero,wmem,wreg,regrt,m2reg,shift,aluimm,jal,sext;
    wire [31:0]   sa = { 27'b0, inst[10:6] }; // extend to 32 bits from sa for shift instruction
-   wire [31:0]   offset = {imm[13:0],inst[15:0],1'b0,1'b0};   //offset(include sign extend)
    wire          e = sext & inst[15];          // positive or negative sign at sext signal
    wire [15:0]   imm = {16{e}};                // high 16 sign bit
    wire [31:0]   immediate = {imm,inst[15:0]}; // sign extend to high 16
+	wire [31:0]   offset = {imm[13:0],inst[15:0],1'b0,1'b0};   //offset(include sign extend)
    
    dff32 ip (npc,clock,resetn,pc);  // define a D-register for PC
    
-   // cla32 pcplus4 (pc,32¡¯h4, 1¡¯b0,p4);
-   // cla32 br_adr (p4,offset,1¡¯b0,adr);
+   // cla32 pcplus4 (pc,32ï¿½ï¿½h4, 1ï¿½ï¿½b0,p4);
+   // cla32 br_adr (p4,offset,1ï¿½ï¿½b0,adr);
    
    assign p4 = pc + 32'h4;       // modified
    assign adr = p4 + offset;     // modified

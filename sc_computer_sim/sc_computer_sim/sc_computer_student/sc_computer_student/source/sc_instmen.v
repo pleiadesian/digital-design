@@ -9,7 +9,7 @@ module sc_instmem (addr,inst,clock,mem_clk,imem_clk);
 
    assign  imem_clk = clock & ( ~ mem_clk );      
    
-   lpm_rom_irom irom (addr[7:2],imem_clk,inst); 
+   lpm_rom_irom irom (addr[8:2],imem_clk,inst); 
    
 
 endmodule 
