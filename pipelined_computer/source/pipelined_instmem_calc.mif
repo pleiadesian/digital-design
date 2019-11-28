@@ -1,0 +1,92 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=128;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+ 0 : 3c070000;	% (000) start:	lui $7, 0		# reg7 stores op	add=0 sub=1 xor=2		%
+ 1 : 08000033;	% (004)		j main		# start main program				%
+ 2 : 001ef080;	% (008) sevenseg:   sll $30, $30, 2	# calculate sevenseg table item addr to load		%
+ 3 : 8fdd0000;	% (00c)		lw $29, 0($30)	# load sevenseg code of arg($30) from data memory to $29 %
+ 4 : 03e00008;	% (010)		jr $31		# return						%
+ 5 : 0000e820;	% (014) split:	add $29, $0, $0	# set reg29 to 0					%
+ 6 : 23defff6;	% (018) split_loop:	addi $30, $30, -10	# reg30 = result - 10				%
+ 7 : 001ee7c3;	% (01c)		sra $28, $30, 31	# extend sign digit of the result			%
+ 8 : 17800002;	% (020)		bne $28, $0, split_done	# if reg30 is negative, goto split_done		%
+ 9 : 23bd0001;	% (024)		addi $29, $29, 1	# reg29++					%
+ A : 08000006;	% (028)		j split_loop	# continue loop					%
+ B : 23dc000a;	% (02c) split_done:	addi $28, $30, 10	# get units digit and store to $28			%
+ C : 03e00008;	% (030)		jr $31		# return						%
+ D : 03e0a020;	% (034) display:	add $20, $31, $0	# store return address to reg20			%
+ E : 001dd140;	% (038)		sll $26, $29, 5	# $26 = 32 * $29					%
+ F : 235aff00;	% (03c)		addi $26, $26, 0xff00 # store sevenseg base addr to reg26			%
+10 : 0c000005;	% (040)		jal split		# call split					%
+11 : 03a0f020;	% (044)		add $30, $29, $0	# move $29(returned tens digit) to $30			%
+12 : 0c000002;	% (048)		jal sevenseg	# call split					%
+13 : af5d0010;	% (04c)		sw $29, 0x10($26)	# show sevenseg tens digit				%
+14 : 0380f020;	% (050)		add $30, $28, $0	# move $28(returned units digit) to $30			%
+15 : 0c000002;	% (054)		jal sevenseg	# call split					%
+16 : af5d0000;	% (058)		sw $29, 0x0($26)	# show sevenseg units digit				%
+17 : 0280f820;	% (05c)		add $31, $20, $0	# restore return address				%
+18 : 03e00008;	% (060)		jr $31		# return						%
+19 : 8c05ff70;	% (064) get_op:	lw $5, 0xff70($0)	# load keys to reg5					%
+1A : 2006ffff;	% (068)		addi $6, $0, -1	# store 0xffffffff to reg6				%
+1B : 00a62826;	% (06c)		xor $5, $5, $6	# reg5 = ~reg5					%
+1C : 30a60004;	% (070)		andi $6, $5, 0x4	# store key3 to reg6				%
+1D : 14c00005;	% (074)		bne $6, $0, add_op	# key3 is pressed, change op to add			%
+1E : 30a60002;	% (078)		andi $6, $5, 0x2	# store key2 to reg6				%
+1F : 14c00004;	% (07c)		bne $6, $0, sub_op	# key2 is pressed, change op to sub			%
+20 : 30a60001;	% (080)		andi $6, $5, 0x1	# store key1 to reg6				%
+21 : 14c00003;	% (084)		bne $6, $0, xor_op	# key1 is pressed, change op to xor			%
+22 : 03e00008;	% (088)		jr $31		# no key pressed, return				%
+23 : 20c6fffd;	% (08c) add_op:	addi $6, $6, -3	# calculate new opcode(4-3-2+1=0)			%
+24 : 20c6fffe;	% (090) sub_op:	addi $6, $6, -2	# calculate new opcode(2-2+1=1)			%
+25 : 20c70001;	% (094) xor_op:	addi $7, $6, 1	# calculate new opcode and store to $7(1+1=2)		%
+26 : 03e00008;	% (098)		jr $31		# return						%
+27 : 14e00002;	% (09c) calc:	bne $7, $0, not_add	# check if op is add					%
+28 : 00432020;	% (0a0)		add $4, $2, $3	# add a and b, store result to reg4			%
+29 : 03e00008;	% (0a4)		jr $31		# return						%
+2A : 20e8ffff;	% (0a8) not_add:	addi $8, $7, -1	# op--, for checking if op is sub			%
+2B : 15000005;	% (0ac)		bne $8, $0, not_sub	# check if op is sub					%
+2C : 00432022;	% (0b0)		sub $4, $2, $3	# sub a and b, store result to reg4			%
+2D : 00042fc3;	% (0b4)		sra $5, $4, 31	# extend sign digit of the result			%
+2E : 10a00001;	% (0b8)		beq $5, $0, sub_done	# result is positive, done			%
+2F : 00042022;	% (0bc)		sub $4, $0, $4	# get abs of result					%
+30 : 03e00008;	% (0c0) sub_done:	jr $31		# return						%
+31 : 00432026;	% (0c4) not_sub:	xor $4, $2, $3	# xor a and b, store result to reg4			%
+32 : 03e00008;	% (0c8)		jr $31		# return						%
+33 : 8c01ff80;	% (0cc) main:	lw $1, 0xff80($0)	# load switches to reg1				%
+34 : ac01ff60;	% (0d0)		sw $1, 0xff60($0)	# display reg1 to leds 				%
+35 : 302203e0;	% (0d4)		andi $2, $1, 0x3e0	# get high bits for value a and store to reg2		%
+36 : 00011142;	% (0d8)		srl $2, $1, 5	# calculate value a in reg2				%
+37 : 3023001f;	% (0dc)		andi $3, $1, 0x1f	# get low bits as value b and store to reg3		%
+38 : 0c000019;	% (0e0)		jal get_op		# call get_op					%
+39 : 0c000027;	% (0e4)		jal calc		# call calc						%
+3A : 0080f020;	% (0e8)		add $30, $4, $0	# move result to reg30				%
+3B : 201d0000;	% (0ec)		addi $29, $0, 0	# set pos to 0					%
+3C : 0c00000d;	% (0f0)		jal display	# call display					%
+3D : 0040f020;	% (0f4)		add $30, $2, $0	# store value a to reg30				%
+3E : 201d0002;	% (0f8)		addi $29, $0, 2	# set pos to 2					%
+3F : 0c00000d;	% (0fc)		jal display	# call display					%
+40 : 0060f020;	% (100)		add $30, $3, $0	# move value b to reg30				%
+41 : 201d0001;	% (104)		addi $29, $0, 1	# set pos to 1					%
+42 : 0c00000d;	% (108)		jal display	# call display					%
+43 : 08000033;	% (10c)		j main		# continue main 					%
+END ;
