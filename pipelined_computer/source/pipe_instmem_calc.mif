@@ -1,0 +1,118 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=128;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+ 0 : 3c070000;	% (000) start:	lui $7, 0		# reg7 stores op	add=0 sub=1 xor=2		%
+ 1 : 08000047;	% (004)		j main		# start main program				%
+ 2 : 00000020;	% (008)		add $0, $0, $0	# nop						%
+ 3 : 001ef080;	% (00c) sevenseg:   sll $30, $30, 2	# calculate sevenseg table item addr to load		%
+ 4 : 8fdd0000;	% (010)		lw $29, 0($30)	# load sevenseg code of arg($30) from data memory to $29 %
+ 5 : 03e00008;	% (014)		jr $31		# return						%
+ 6 : 00000020;	% (018)		add $0, $0, $0	# nop						%
+ 7 : 0000e820;	% (01c) split:	add $29, $0, $0	# set reg29 to 0					%
+ 8 : 23defff6;	% (020) split_loop:	addi $30, $30, -10	# reg30 = result - 10				%
+ 9 : 001ee7c3;	% (024)		sra $28, $30, 31	# extend sign digit of the result			%
+ A : 17800004;	% (028)		bne $28, $0, split_done	# if reg30 is negative, goto split_done		%
+ B : 00000020;	% (02c)		add $0, $0, $0	# nop						%
+ C : 23bd0001;	% (030)		addi $29, $29, 1	# reg29++					%
+ D : 08000008;	% (034)		j split_loop	# continue loop					%
+ E : 00000020;	% (038)		add $0, $0, $0	# nop						%
+ F : 23dc000a;	% (03c) split_done:	addi $28, $30, 10	# get units digit and store to $28			%
+10 : 03e00008;	% (040)		jr $31		# return						%
+11 : 00000020;	% (044)		add $0, $0, $0	# nop						%
+12 : 03e0a020;	% (048) display:	add $20, $31, $0	# store return address to reg20			%
+13 : 001dd140;	% (04c)		sll $26, $29, 5	# $26 = 32 * $29					%
+14 : 235aff00;	% (050)		addi $26, $26, 0xff00 # store sevenseg base addr to reg26			%
+15 : 0c000007;	% (054)		jal split		# call split					%
+16 : 00000020;	% (058)		add $0, $0, $0	# nop						%
+17 : 03a0f020;	% (05c)		add $30, $29, $0	# move $29(returned tens digit) to $30			%
+18 : 0c000003;	% (060)		jal sevenseg	# call sevenseg					%
+19 : 00000020;	% (064)		add $0, $0, $0	# nop						%
+1A : af5d0010;	% (068)		sw $29, 0x10($26)	# show sevenseg tens digit				%
+1B : 0380f020;	% (06c)		add $30, $28, $0	# move $28(returned units digit) to $30			%
+1C : 0c000003;	% (070)		jal sevenseg	# call sevenseg					%
+1D : 00000020;	% (074)		add $0, $0, $0	# nop						%
+1E : af5d0000;	% (078)		sw $29, 0x0($26)	# show sevenseg units digit				%
+1F : 0280f820;	% (07c)		add $31, $20, $0	# restore return address				%
+20 : 03e00008;	% (080)		jr $31		# return						%
+21 : 00000020;	% (084)		add $0, $0, $0	# nop						%
+22 : 8c05ff70;	% (088) get_op:	lw $5, 0xff70($0)	# load keys to reg5					%
+23 : 2006ffff;	% (08c)		addi $6, $0, -1	# store 0xffffffff to reg6				%
+24 : 00a62826;	% (090)		xor $5, $5, $6	# reg5 = ~reg5					%
+25 : 30a60004;	% (094)		andi $6, $5, 0x4	# store key3 to reg6				%
+26 : 14c00009;	% (098)		bne $6, $0, add_op	# key3 is pressed, change op to add			%
+27 : 00000020;	% (09c)		add $0, $0, $0	# nop						%
+28 : 30a60002;	% (0a0)		andi $6, $5, 0x2	# store key2 to reg6				%
+29 : 14c00007;	% (0a4)		bne $6, $0, sub_op	# key2 is pressed, change op to sub			%
+2A : 00000020;	% (0a8)		add $0, $0, $0	# nop						%
+2B : 30a60001;	% (0ac)		andi $6, $5, 0x1	# store key1 to reg6				%
+2C : 14c00005;	% (0b0)		bne $6, $0, xor_op	# key1 is pressed, change op to xor			%
+2D : 00000020;	% (0b4)		add $0, $0, $0	# nop						%
+2E : 03e00008;	% (0b8)		jr $31		# no key pressed, return				%
+2F : 00000020;	% (0bc)		add $0, $0, $0	# nop						%
+30 : 20c6fffd;	% (0c0) add_op:	addi $6, $6, -3	# calculate new opcode(4-3-2+1=0)			%
+31 : 20c6fffe;	% (0c4) sub_op:	addi $6, $6, -2	# calculate new opcode(2-2+1=1)			%
+32 : 20c70001;	% (0c8) xor_op:	addi $7, $6, 1	# calculate new opcode and store to $7(1+1=2)		%
+33 : 03e00008;	% (0cc)		jr $31		# return						%
+34 : 00000020;	% (0d0)		add $0, $0, $0	# nop						%
+35 : 14e00004;	% (0d4) calc:	bne $7, $0, not_add	# check if op is add					%
+36 : 00000020;	% (0d8)		add $0, $0, $0	# nop						%
+37 : 00432020;	% (0dc)		add $4, $2, $3	# add a and b, store result to reg4			%
+38 : 03e00008;	% (0e0)		jr $31		# return						%
+39 : 00000020;	% (0e4)		add $0, $0, $0	# nop						%
+3A : 20e8ffff;	% (0e8) not_add:	addi $8, $7, -1	# op--, for checking if op is sub			%
+3B : 15000008;	% (0ec)		bne $8, $0, not_sub	# check if op is sub					%
+3C : 00000020;	% (0f0)		add $0, $0, $0	# nop						%
+3D : 00432022;	% (0f4)		sub $4, $2, $3	# sub a and b, store result to reg4			%
+3E : 00042fc3;	% (0f8)		sra $5, $4, 31	# extend sign digit of the result			%
+3F : 10a00002;	% (0fc)		beq $5, $0, sub_done	# result is positive, done			%
+40 : 00000020;	% (100)		add $0, $0, $0	# nop						%
+41 : 00042022;	% (104)		sub $4, $0, $4	# get abs of result					%
+42 : 03e00008;	% (108) sub_done:	jr $31		# return						%
+43 : 00000020;	% (10c)		add $0, $0, $0	# nop						%
+44 : 00432026;	% (110) not_sub:	xor $4, $2, $3	# xor a and b, store result to reg4			%
+45 : 03e00008;	% (114)		jr $31		# return						%
+46 : 00000020;	% (118)		add $0, $0, $0	# nop						%
+47 : 8c01ff80;	% (11c) main:	lw $1, 0xff80($0)	# load switches to reg1				%
+48 : ac01ff60;	% (120)		sw $1, 0xff60($0)	# display reg1 to leds 				%
+49 : 302203e0;	% (124)		andi $2, $1, 0x3e0	# get high bits for value a and store to reg2		%
+4A : 00011142;	% (128)		srl $2, $1, 5	# calculate value a in reg2				%
+4B : 3023001f;	% (12c)		andi $3, $1, 0x1f	# get low bits as value b and store to reg3		%
+4C : 0c000022;	% (130)		jal get_op		# call get_op					%
+4D : 00000020;	% (134)		add $0, $0, $0	# nop						%
+4E : 0c000035;	% (138)		jal calc		# call calc						%
+4F : 00000020;	% (13c)		add $0, $0, $0	# nop						%
+50 : 0080f020;	% (140)		add $30, $4, $0	# move result to reg30				%
+51 : 201d0000;	% (144)		addi $29, $0, 0	# set pos to 0					%
+52 : 0c000012;	% (148)		jal display	# call display					%
+53 : 00000020;	% (14c)		add $0, $0, $0	# nop						%
+54 : 0040f020;	% (150)		add $30, $2, $0	# store value a to reg30				%
+55 : 201d0002;	% (154)		addi $29, $0, 2	# set pos to 2					%
+56 : 0c000012;	% (158)		jal display	# call display					%
+57 : 00000020;	% (15c)		add $0, $0, $0	# nop						%
+58 : 0060f020;	% (160)		add $30, $3, $0	# move value b to reg30				%
+59 : 201d0001;	% (164)		addi $29, $0, 1	# set pos to 1					%
+5A : 0c000012;	% (168)		jal display	# call display					%
+5B : 00000020;	% (16c)		add $0, $0, $0	# nop						%
+5C : 08000047;	% (170)		j main		# continue main 					%
+5D : 00000020;	% (174)		add $0, $0, $0	# nop						%
+END ;

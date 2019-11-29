@@ -75,19 +75,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	sc_computer_main
 
-} {} {}} C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v {1 {vlog -work work C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module dff32
-
-Top level modules:
-	dff32
-
 } {} {}} C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cu.v {1 {vlog -work work C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cu.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module sc_cu
 
 Top level modules:
 	sc_cu
+
+} {} {}} C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v {1 {vlog -work work C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff32
+
+Top level modules:
+	dff32
 
 } {} {}} C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_datamem.v {1 {vlog -work work C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_datamem.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

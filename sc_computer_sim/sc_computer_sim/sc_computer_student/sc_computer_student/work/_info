@@ -17,7 +17,7 @@ r1
 31
 Z9 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/alu.v|
 Z10 o-work work -O0
-Z11 !s108 1573394746.028000
+Z11 !s108 1575004656.078000
 Z12 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/alu.v|
 !i10b 1
 !s85 0
@@ -36,7 +36,7 @@ r1
 31
 Z19 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/clock_t.v|
 R10
-Z20 !s108 1573394746.118000
+Z20 !s108 1575004656.140000
 Z21 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/clock_t.v|
 !i10b 1
 !s85 0
@@ -74,7 +74,7 @@ r1
 31
 Z33 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v|
 R10
-Z34 !s108 1573394746.174000
+Z34 !s108 1575004656.199000
 Z35 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dff32.v|
 !i10b 1
 !s85 0
@@ -93,7 +93,7 @@ r1
 31
 Z42 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dffe32.v|
 R10
-Z43 !s108 1573394746.230000
+Z43 !s108 1575004656.260000
 Z44 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/dffe32.v|
 !i10b 1
 !s85 0
@@ -112,7 +112,7 @@ r1
 31
 Z51 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/lpm_ram_dq_dram.v|
 R10
-Z52 !s108 1573394746.290000
+Z52 !s108 1575004656.324000
 Z53 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/lpm_ram_dq_dram.v|
 !i10b 1
 !s85 0
@@ -131,7 +131,7 @@ r1
 31
 Z60 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/lpm_rom_irom.v|
 R10
-Z61 !s108 1573394746.346000
+Z61 !s108 1575004656.391000
 Z62 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/lpm_rom_irom.v|
 !i10b 1
 !s85 0
@@ -150,7 +150,7 @@ r1
 31
 Z69 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux2x32.v|
 R10
-Z70 !s108 1573394746.462000
+Z70 !s108 1575004656.528000
 Z71 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux2x32.v|
 !i10b 1
 !s85 0
@@ -169,7 +169,7 @@ r1
 31
 Z78 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux2x5.v|
 R10
-Z79 !s108 1573394746.410000
+Z79 !s108 1575004656.463000
 Z80 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux2x5.v|
 !i10b 1
 !s85 0
@@ -188,7 +188,7 @@ r1
 31
 Z87 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux4x32.v|
 R10
-Z88 !s108 1573394746.526000
+Z88 !s108 1575004656.588000
 Z89 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/mux4x32.v|
 !i10b 1
 !s85 0
@@ -207,7 +207,7 @@ r1
 31
 Z96 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/regfile.v|
 R10
-Z97 !s108 1573394746.582000
+Z97 !s108 1575004656.643000
 Z98 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/regfile.v|
 !i10b 1
 !s85 0
@@ -226,7 +226,7 @@ r1
 31
 Z105 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_computer.v|
 R10
-Z106 !s108 1573394746.642000
+Z106 !s108 1575004656.714000
 Z107 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_computer.v|
 !i10b 1
 !s85 0
@@ -245,27 +245,27 @@ r1
 31
 Z114 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_computer_sim.v|
 R10
-Z115 !s108 1573394746.698000
+Z115 !s108 1575004656.772000
 Z116 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_computer_sim.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vsc_cpu
-Z117 IZG6Ej_gcQI;]l0>]ij`He2
-Z118 V:mi8;^<LZUMNBc_]kEVbj2
+Z117 !s100 NPf@CIm5;=7FoZ3QnDhe50
+Z118 IZG6Ej_gcQI;]l0>]ij`He2
+Z119 V:mi8;^<LZUMNBc_]kEVbj2
 R4
-Z119 w1573361986
-Z120 8C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v
-Z121 FC:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v
+Z120 w1573361986
+Z121 8C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v
+Z122 FC:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v
 L0 1
 R8
 r1
 31
+Z123 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v|
 R10
-Z122 !s100 NPf@CIm5;=7FoZ3QnDhe50
-Z123 !s108 1573394746.758000
-Z124 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v|
-Z125 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v|
+Z124 !s108 1575004656.839000
+Z125 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cpu.v|
 !i10b 1
 !s85 0
 !s101 -O0
@@ -283,7 +283,7 @@ r1
 31
 Z132 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cu.v|
 R10
-Z133 !s108 1573394746.818000
+Z133 !s108 1575004656.908000
 Z134 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_cu.v|
 !i10b 1
 !s85 0
@@ -304,7 +304,7 @@ Z141 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim
 R10
 !i10b 1
 !s85 0
-Z142 !s108 1573394746.882000
+Z142 !s108 1575004656.970000
 Z143 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_datamem.v|
 !s101 -O0
 vsc_instmem
@@ -321,7 +321,7 @@ R8
 r1
 !s85 0
 31
-!s108 1573394746.942000
+!s108 1575004657.028000
 !s107 C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_instmen.v|
 Z150 !s90 -reportprogress|300|-work|work|C:/fpga/sc_computer_sim/sc_computer_sim/sc_computer_student/sc_computer_student/source/sc_instmen.v|
 !s101 -O0

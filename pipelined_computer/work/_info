@@ -1,0 +1,499 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\fpga\sc_computer_sim\sc_computer_sim\sc_computer_student\sc_computer_student
+valu
+Z1 !s100 J59n_0IEORal=STcGncTf0
+Z2 II<[5<^T4E<ka;cE@?LUYZ3
+Z3 V7WhcNChHE10k:fH6QanEO0
+Z4 dC:\fpga\pipelined_computer
+Z5 w1575008542
+Z6 8C:/fpga/pipelined_computer/source/alu.v
+Z7 FC:/fpga/pipelined_computer/source/alu.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/alu.v|
+Z10 o-work work -O0
+Z11 !s108 1575028325.318000
+Z12 !s107 C:/fpga/pipelined_computer/source/alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff1
+Z13 !s100 eZQzo9H[iIz`PB=PD@<je0
+Z14 Ik3LNlB0BJQD4nj6[`[>J=2
+Z15 ViJIo<RD2703Daz8dOX7BO3
+R4
+Z16 w1574995998
+Z17 8C:/fpga/pipelined_computer/source/dff1.v
+Z18 FC:/fpga/pipelined_computer/source/dff1.v
+L0 2
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff1.v|
+R10
+Z20 !s108 1575028325.393000
+Z21 !s107 C:/fpga/pipelined_computer/source/dff1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff32
+Z22 !s100 <YDTRX`H33[>AChVS49<01
+Z23 IkofVQ`o<1cME3Ba4^aS;e3
+Z24 VUO7_EzIi9>SeN7M;XG9<c0
+R4
+Z25 w1574996136
+Z26 8C:/fpga/pipelined_computer/source/dff32.v
+Z27 FC:/fpga/pipelined_computer/source/dff32.v
+L0 2
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff32.v|
+R10
+Z29 !s108 1575028325.605000
+Z30 !s107 C:/fpga/pipelined_computer/source/dff32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff4
+Z31 !s100 XiPm<9FGnUN[k`PMQgCkS2
+Z32 Ifz=J8X1K6bBA4nF<]@Jj03
+Z33 V6<ndPcWm5Oj@FIHENO]:a1
+R4
+Z34 w1574996086
+Z35 8C:/fpga/pipelined_computer/source/dff4.v
+Z36 FC:/fpga/pipelined_computer/source/dff4.v
+L0 2
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff4.v|
+R10
+Z38 !s108 1575028325.460000
+Z39 !s107 C:/fpga/pipelined_computer/source/dff4.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff5
+Z40 !s100 lBKN@HlglR6UiSi6Tk06G3
+Z41 I7NCX`S[YZ0=H9nF9FMSCd1
+Z42 Vo]>Oo3IH;A56onXZSDfGi3
+R4
+Z43 w1574996101
+Z44 8C:/fpga/pipelined_computer/source/dff5.v
+Z45 FC:/fpga/pipelined_computer/source/dff5.v
+L0 2
+R8
+r1
+31
+Z46 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff5.v|
+R10
+Z47 !s108 1575028325.528000
+Z48 !s107 C:/fpga/pipelined_computer/source/dff5.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdffe32
+Z49 !s100 >jFU[D>PMVc^AI7IGF@]V2
+Z50 I4<_KPc]E9Xi3B6Lhmoa[;2
+Z51 V6]Tk:7m18<;Eoi?;I3VNB3
+R4
+Z52 w1574996599
+Z53 8C:/fpga/pipelined_computer/source/dffe32.v
+Z54 FC:/fpga/pipelined_computer/source/dffe32.v
+L0 2
+R8
+r1
+31
+Z55 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dffe32.v|
+R10
+Z56 !s108 1575028325.671000
+Z57 !s107 C:/fpga/pipelined_computer/source/dffe32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vlpm_ram_dq_dram
+Z58 !s100 cJeDILBRHGdGN<PemgVnj3
+Z59 I?W[HLWCQ9`CmZ9:9gF:0B2
+Z60 V;^>UgMFOjF@EZ@A<NMAW`0
+R4
+Z61 w1575008017
+Z62 8C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v
+Z63 FC:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v
+L0 39
+R8
+r1
+31
+Z64 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v|
+R10
+Z65 !s108 1575028325.739000
+Z66 !s107 C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vlpm_rom_irom
+Z67 !s100 kcfn<k5JZgcOPR4X1m68S0
+Z68 INfcn?4IEeoPlll@QOW18G3
+Z69 Vf7ej0:BTdh_>ALRf8BBJO0
+R4
+Z70 w1575007992
+Z71 8C:/fpga/pipelined_computer/source/lpm_rom_irom.v
+Z72 FC:/fpga/pipelined_computer/source/lpm_rom_irom.v
+L0 39
+R8
+r1
+31
+Z73 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/lpm_rom_irom.v|
+R10
+Z74 !s108 1575028325.811000
+Z75 !s107 C:/fpga/pipelined_computer/source/lpm_rom_irom.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2x32
+Z76 !s100 iJ;`HI=MoJ9dKW;8nac@z3
+Z77 IQ2YKK>6f^l`[Tj5BPUC;22
+Z78 V_8o=]o8CzEDeX@^n?a@zP3
+R4
+Z79 w1574858883
+Z80 8C:/fpga/pipelined_computer/source/mux2x32.v
+Z81 FC:/fpga/pipelined_computer/source/mux2x32.v
+L0 1
+R8
+r1
+31
+Z82 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux2x32.v|
+R10
+Z83 !s108 1575028325.960000
+Z84 !s107 C:/fpga/pipelined_computer/source/mux2x32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2x5
+Z85 !s100 ]9FGbXkJ_PJnhKURVU[3X0
+Z86 IL?M7hRe2LV;bLRZR51in;2
+Z87 Vah3g>_]Y^Qz2GXD7HR^<<3
+R4
+Z88 w1574858828
+Z89 8C:/fpga/pipelined_computer/source/mux2x5.v
+Z90 FC:/fpga/pipelined_computer/source/mux2x5.v
+L0 1
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux2x5.v|
+R10
+Z92 !s108 1575028325.885000
+Z93 !s107 C:/fpga/pipelined_computer/source/mux2x5.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4x32
+Z94 !s100 ]>kGDKRj47nZDX]K8J24B0
+Z95 IkZ^g_ncbzo]DmLP3^5iX82
+Z96 VM:hYY`k:C]4^:^k7d8C]M0
+R4
+Z97 w1574858774
+Z98 8C:/fpga/pipelined_computer/source/mux4x32.v
+Z99 FC:/fpga/pipelined_computer/source/mux4x32.v
+L0 1
+R8
+r1
+31
+Z100 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux4x32.v|
+R10
+Z101 !s108 1575028326.030000
+Z102 !s107 C:/fpga/pipelined_computer/source/mux4x32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipe_cu
+Z103 !s100 ;hfkZ_cJcnIN1S6=JP=^C3
+Z104 I4d3Wcl]aNiYAZLiZEz6`B0
+Z105 Vg=TcH[`l=oEZHHoPcXc2D1
+R4
+Z106 w1575005173
+Z107 8C:/fpga/pipelined_computer/source/pipe_cu.v
+Z108 FC:/fpga/pipelined_computer/source/pipe_cu.v
+L0 1
+R8
+r1
+31
+Z109 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_cu.v|
+R10
+Z110 !s108 1575028326.103000
+Z111 !s107 C:/fpga/pipelined_computer/source/pipe_cu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipe_datamem
+Z112 !s100 aO@IFUDnX8<70<=gnfLB^3
+Z113 IN<Q_cg[hH=4IEA6^h5oI40
+Z114 VXQ7KH7WeJF9gCF5kkeFnT0
+R4
+Z115 w1575005281
+Z116 8C:/fpga/pipelined_computer/source/pipe_datamem.v
+Z117 FC:/fpga/pipelined_computer/source/pipe_datamem.v
+L0 1
+R8
+r1
+31
+Z118 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_datamem.v|
+R10
+Z119 !s108 1575028326.176000
+Z120 !s107 C:/fpga/pipelined_computer/source/pipe_datamem.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipe_instmem
+Z121 !s100 `;BCR_B3[`1510DY]HXjn0
+Z122 I:WXYXU4V278TR3D=4WP]`1
+Z123 Vz1ZmmAE<LMkc<2[RG0J4l3
+R4
+Z124 w1574999462
+Z125 8C:/fpga/pipelined_computer/source/pipe_instmem.v
+Z126 FC:/fpga/pipelined_computer/source/pipe_instmem.v
+L0 1
+R8
+r1
+31
+Z127 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_instmem.v|
+R10
+Z128 !s108 1575028326.244000
+Z129 !s107 C:/fpga/pipelined_computer/source/pipe_instmem.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipedereg
+Z130 !s100 bhPRf@=;iN3AbGP07g;EN0
+Z131 IznM]2hHZ@PEY4ZIPY0Sc;1
+Z132 VcA>3gWnZG>eC<;iViLf^f2
+R4
+Z133 w1574996345
+Z134 8C:/fpga/pipelined_computer/source/pipedereg.v
+Z135 FC:/fpga/pipelined_computer/source/pipedereg.v
+L0 1
+R8
+r1
+31
+Z136 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipedereg.v|
+R10
+Z137 !s108 1575028326.313000
+Z138 !s107 C:/fpga/pipelined_computer/source/pipedereg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipeemreg
+Z139 !s100 ]8OHPTP<Wc_d?7kX^M^AO2
+Z140 IjXY17P:8LT[U[4A_Hf@6Z2
+Z141 V3I1jGXGA<KJjF8Fd=FNC`3
+R4
+Z142 w1574998848
+Z143 8C:/fpga/pipelined_computer/source/pipeemreg.v
+Z144 FC:/fpga/pipelined_computer/source/pipeemreg.v
+L0 1
+R8
+r1
+31
+Z145 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeemreg.v|
+R10
+Z146 !s108 1575028326.381000
+Z147 !s107 C:/fpga/pipelined_computer/source/pipeemreg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipeexe
+Z148 !s100 >VTPRh>==:JQG@<aJD3EC0
+Z149 I72A0;Q6PDhIEFYJS;4llF0
+Z150 V5lbDPf9VM[ZRRDLBF1OUH1
+R4
+Z151 w1574997839
+Z152 8C:/fpga/pipelined_computer/source/pipeexe.v
+Z153 FC:/fpga/pipelined_computer/source/pipeexe.v
+L0 1
+R8
+r1
+31
+Z154 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeexe.v|
+R10
+Z155 !s108 1575028326.449000
+Z156 !s107 C:/fpga/pipelined_computer/source/pipeexe.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipeid
+Z157 !s100 _Sf1KMQ8ZoGISAD89DzW`2
+Z158 ITnHlQQ4aD9_UhW>[?RZIA1
+Z159 V=d:iIU_WY>3D<>PmQ^N6f0
+R4
+Z160 w1575001541
+Z161 8C:/fpga/pipelined_computer/source/pipeid.v
+Z162 FC:/fpga/pipelined_computer/source/pipeid.v
+L0 1
+R8
+r1
+31
+Z163 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeid.v|
+R10
+Z164 !s108 1575028326.520000
+Z165 !s107 C:/fpga/pipelined_computer/source/pipeid.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipeif
+Z166 !s100 z0>?38BYj[fdY@2[Dd0Fg1
+Z167 I_l0NTPg649BOPZTU`16]32
+Z168 V9V7[=Qi_@2JD6jP@kPUo>0
+R4
+Z169 w1574999473
+Z170 8C:/fpga/pipelined_computer/source/pipeif.v
+Z171 FC:/fpga/pipelined_computer/source/pipeif.v
+L0 1
+R8
+r1
+31
+Z172 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeif.v|
+R10
+Z173 !s108 1575028326.599000
+Z174 !s107 C:/fpga/pipelined_computer/source/pipeif.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipeir
+Z175 !s100 PA:jeT>CY=5A0CK0fnnzh3
+Z176 I1LfLl=X6iibHncQ]oPImb3
+Z177 VXAID;`^C?92>R1?9o><oA0
+R4
+Z178 w1574934520
+Z179 8C:/fpga/pipelined_computer/source/pipeir.v
+Z180 FC:/fpga/pipelined_computer/source/pipeir.v
+L0 1
+R8
+r1
+31
+Z181 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeir.v|
+R10
+Z182 !s108 1575028326.671000
+Z183 !s107 C:/fpga/pipelined_computer/source/pipeir.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipelined_computer_main
+Z184 !s100 :[0:fzX6Dc]DWjCA8J7NC3
+Z185 IeBJdb7^UcYTgLG=3TlkbQ1
+Z186 VoI^^GGnmC2O_D@_NN7b?V0
+R4
+Z187 w1575010670
+Z188 8C:/fpga/pipelined_computer/source/pipelined_computer.v
+Z189 FC:/fpga/pipelined_computer/source/pipelined_computer.v
+L0 1
+R8
+r1
+31
+Z190 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipelined_computer.v|
+R10
+Z191 !s108 1575028326.738000
+Z192 !s107 C:/fpga/pipelined_computer/source/pipelined_computer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipelined_computer_sim
+!i10b 1
+!s100 ]PIgbX0fKl83MlCC[WbIi0
+I8m]Y5oB`Oifz=O:UJlgh`0
+Z193 VKng3S<C`dU>icI4`V1hB^0
+R4
+w1575028320
+Z194 8C:/fpga/pipelined_computer/source/pipelined_computer_sim.v
+Z195 FC:/fpga/pipelined_computer/source/pipelined_computer_sim.v
+L0 26
+R8
+r1
+!s85 0
+31
+!s108 1575028327.089000
+!s107 C:/fpga/pipelined_computer/source/pipelined_computer_sim.v|
+Z196 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipelined_computer_sim.v|
+!s101 -O0
+R10
+vpipemem
+Z197 !s100 5KMV]5kK=N>3Z60S=TWZ83
+Z198 IX[Poi_D[:gY>bc[e@jHMj1
+Z199 V0nH^iKGin5L=7hOn5QBV<2
+R4
+Z200 w1574999902
+Z201 8C:/fpga/pipelined_computer/source/pipemem.v
+Z202 FC:/fpga/pipelined_computer/source/pipemem.v
+L0 1
+R8
+r1
+31
+Z203 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipemem.v|
+R10
+Z204 !s108 1575028326.808000
+Z205 !s107 C:/fpga/pipelined_computer/source/pipemem.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipemwreg
+Z206 !s100 V3Sai>Tck;nPeX2iR3Y;`2
+Z207 Il^GkO5c9CHmi6TmkA]:I;1
+Z208 VId]69z>dOce;D[VcEm6@=3
+R4
+Z209 w1575000279
+Z210 8C:/fpga/pipelined_computer/source/pipemwreg.v
+Z211 FC:/fpga/pipelined_computer/source/pipemwreg.v
+L0 1
+R8
+r1
+31
+Z212 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipemwreg.v|
+R10
+Z213 !s108 1575028326.875000
+Z214 !s107 C:/fpga/pipelined_computer/source/pipemwreg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpipepc
+Z215 !s100 oTec>eS26fH`PXPa_eB7?0
+Z216 Im67J=i?l7G]HLUV_iB[Fd2
+Z217 V?TeI]2Q7YZDQM4R_aiind1
+R4
+Z218 w1574995866
+Z219 8C:/fpga/pipelined_computer/source/pipepc.v
+Z220 FC:/fpga/pipelined_computer/source/pipepc.v
+L0 1
+R8
+r1
+31
+Z221 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipepc.v|
+R10
+Z222 !s108 1575028326.942000
+Z223 !s107 C:/fpga/pipelined_computer/source/pipepc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregfile
+Z224 !s100 eXTInogPkSFXRBVS_Lj1Q0
+Z225 I:^G8nRldL6kJdz64a9XUi0
+Z226 VHL?YD<z4Tlb1gm`0^XW@D2
+R4
+Z227 w1575028075
+Z228 8C:/fpga/pipelined_computer/source/regfile.v
+Z229 FC:/fpga/pipelined_computer/source/regfile.v
+L0 1
+R8
+r1
+31
+Z230 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/regfile.v|
+R10
+!i10b 1
+!s85 0
+Z231 !s108 1575028327.011000
+Z232 !s107 C:/fpga/pipelined_computer/source/regfile.v|
+!s101 -O0

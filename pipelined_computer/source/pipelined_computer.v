@@ -1,4 +1,7 @@
-module pipelined_computer (resetn,clock,mem_clock, pc,inst,ealu,malu,walu);
+module pipelined_computer_main (resetn,clock,mem_clock, pc,inst,ealu,malu,walu,
+	pc4, bpc, jpc, pcsource,
+	ins,dpc4,da,db,dimm,drn,eb,ern,mmo,mrn,wdi,wrn,
+	sw, key, hex5, hex4, hex3, hex2, hex1, hex0, led);
 //定义顶层模块pipelined_computer，作为工程文件的顶层入口，如图1-1建立工程时指定。
 	input resetn, clock;
 //定义整个计算机module和外界交互的输入信号，包括复位信号resetn、时钟信号clock、
@@ -7,10 +10,19 @@ module pipelined_computer (resetn,clock,mem_clock, pc,inst,ealu,malu,walu);
 //这些信号可以用作仿真验证时的输出观察信号。
 	output mem_clock;
 	output [31:0] pc,inst,ealu,malu,walu;
+	output [31:0] pc4,bpc,jpc;
+	output [1:0] pcsource;
+	output [31:0] ins,dpc4,da,db,dimm,eb,mmo,wdi;
+	output [4:0] drn,ern,mrn,wrn;
 //模块用于仿真输出的观察信号。缺省为wire型。
+	input  [9:0]  sw;
+	input  [3:1]  key;
+	output [6:0]  hex5, hex4, hex3, hex2, hex1, hex0;
+	output [9:0]  led;
+// I/O port
 	wire [31:0] bpc,jpc,npc,pc4,ins, inst;
 //模块间互联传递数据或控制信息的信号线,均为32位宽信号。IF取指令阶段。
-	wire [31:0] dpc4,da,db,dim;
+	wire [31:0] dpc4,da,db,dimm;
 //模块间互联传递数据或控制信息的信号线,均为32位宽信号。ID指令译码阶段。
 	wire [31:0] epc4,ea,eb,eimm;
 //模块间互联传递数据或控制信息的信号线,均为32位宽信号。EXE指令运算阶段。
@@ -70,7 +82,9 @@ module pipelined_computer (resetn,clock,mem_clock, pc,inst,ealu,malu,walu);
 //EXE/MEM流水线寄存器模块，起承接EXE阶段和MEM阶段的流水任务。
 //在clock上升沿时，将EXE阶段需传递给MEM阶段的信息，锁存在EXE/MEM
 //流水线寄存器中，并呈现在MEM阶段。
-	pipemem mem_stage ( mwmem,malu,mb,clock,mem_clock,mmo ); // MEM stage
+	pipemem mem_stage ( mwmem,malu,mb,mem_clock,resetn,mmo,sw,key,
+								hex5,hex4,hex3,hex2,hex1,hex0,led); // MEM stage
+// add I/O design
 //MEM数据存取模块。其中包含对数据同步RAM的读写访问。// 注意mem_clock。
 //输入给该同步RAM的mem_clock信号，模块内定义为ram_clk。
 //实验中可采用系统clock的反相信号作为mem_clock信号（亦即ram_clk）,

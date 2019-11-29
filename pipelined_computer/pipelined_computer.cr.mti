@@ -1,0 +1,176 @@
+C:/fpga/pipelined_computer/source/lpm_rom_irom.v {1 {vlog -work work C:/fpga/pipelined_computer/source/lpm_rom_irom.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lpm_rom_irom
+
+Top level modules:
+	lpm_rom_irom
+
+} {} {}} C:/fpga/pipelined_computer/source/dff32.v {1 {vlog -work work C:/fpga/pipelined_computer/source/dff32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff32
+
+Top level modules:
+	dff32
+
+} {} {}} C:/fpga/pipelined_computer/source/pipe_cu.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipe_cu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipe_cu
+
+Top level modules:
+	pipe_cu
+
+} {} {}} C:/fpga/pipelined_computer/source/pipeemreg.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipeemreg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipeemreg
+
+Top level modules:
+	pipeemreg
+
+} {} {}} C:/fpga/pipelined_computer/source/pipemwreg.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipemwreg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipemwreg
+
+Top level modules:
+	pipemwreg
+
+} {} {}} C:/fpga/pipelined_computer/source/pipeexe.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipeexe.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipeexe
+
+Top level modules:
+	pipeexe
+
+} {} {}} C:/fpga/pipelined_computer/source/pipepc.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipepc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipepc
+
+Top level modules:
+	pipepc
+
+} {} {}} C:/fpga/pipelined_computer/source/pipeir.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipeir.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipeir
+
+Top level modules:
+	pipeir
+
+} {} {}} C:/fpga/pipelined_computer/source/dff1.v {1 {vlog -work work C:/fpga/pipelined_computer/source/dff1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff1
+
+Top level modules:
+	dff1
+
+} {} {}} C:/fpga/pipelined_computer/source/mux2x5.v {1 {vlog -work work C:/fpga/pipelined_computer/source/mux2x5.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2x5
+
+Top level modules:
+	mux2x5
+
+} {} {}} C:/fpga/pipelined_computer/source/alu.v {1 {vlog -work work C:/fpga/pipelined_computer/source/alu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/fpga/pipelined_computer/source/dffe32.v {1 {vlog -work work C:/fpga/pipelined_computer/source/dffe32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dffe32
+
+Top level modules:
+	dffe32
+
+} {} {}} C:/fpga/pipelined_computer/source/pipeid.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipeid.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipeid
+
+Top level modules:
+	pipeid
+
+} {} {}} C:/fpga/pipelined_computer/source/dff4.v {1 {vlog -work work C:/fpga/pipelined_computer/source/dff4.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff4
+
+Top level modules:
+	dff4
+
+} {} {}} C:/fpga/pipelined_computer/source/pipemem.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipemem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipemem
+
+Top level modules:
+	pipemem
+
+} {} {}} C:/fpga/pipelined_computer/source/pipeif.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipeif.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipeif
+
+Top level modules:
+	pipeif
+
+} {} {}} C:/fpga/pipelined_computer/source/pipedereg.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipedereg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipedereg
+
+Top level modules:
+	pipedereg
+
+} {} {}} C:/fpga/pipelined_computer/source/dff5.v {1 {vlog -work work C:/fpga/pipelined_computer/source/dff5.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dff5
+
+Top level modules:
+	dff5
+
+} {} {}} C:/fpga/pipelined_computer/source/regfile.v {1 {vlog -work work C:/fpga/pipelined_computer/source/regfile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} C:/fpga/pipelined_computer/source/pipe_datamem.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipe_datamem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipe_datamem
+
+Top level modules:
+	pipe_datamem
+
+} {} {}} C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v {1 {vlog -work work C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lpm_ram_dq_dram
+
+Top level modules:
+	lpm_ram_dq_dram
+
+} {} {}} C:/fpga/pipelined_computer/source/pipelined_computer.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipelined_computer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipelined_computer_main
+
+Top level modules:
+	pipelined_computer_main
+
+} {} {}} C:/fpga/pipelined_computer/source/mux2x32.v {1 {vlog -work work C:/fpga/pipelined_computer/source/mux2x32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2x32
+
+Top level modules:
+	mux2x32
+
+} {} {}} C:/fpga/pipelined_computer/source/pipe_instmem.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipe_instmem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipe_instmem
+
+Top level modules:
+	pipe_instmem
+
+} {} {}} C:/fpga/pipelined_computer/source/mux4x32.v {1 {vlog -work work C:/fpga/pipelined_computer/source/mux4x32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4x32
+
+Top level modules:
+	mux4x32
+
+} {} {}}
