@@ -5,9 +5,9 @@ module memory_game_main(clock, resetn, sw, key, hex5, hex4, hex3, hex2, hex1, he
 	output [6:0]  hex5, hex4, hex3, hex2, hex1, hex0;
 	output [9:0]  led;
 	
-	wire game_clk, display_clk, inc_point, dec_point;
-	wire [9:0] rand;
-	wire [1:0] display_state;
+	wire 			game_clk, display_clk, inc_point, dec_point;
+	wire [9:0] 	rand;
+	wire [1:0] 	display_state;
 	
 	clock_generator game_clk_gen(clock, resetn, game_clk, display_clk);
 	random_generator rand_gen(game_clk, resetn, rand);
