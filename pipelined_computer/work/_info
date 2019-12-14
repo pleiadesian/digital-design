@@ -17,7 +17,7 @@ r1
 31
 Z9 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/alu.v|
 Z10 o-work work -O0
-Z11 !s108 1575028325.318000
+Z11 !s108 1576110573.691000
 Z12 !s107 C:/fpga/pipelined_computer/source/alu.v|
 !i10b 1
 !s85 0
@@ -36,7 +36,7 @@ r1
 31
 Z19 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff1.v|
 R10
-Z20 !s108 1575028325.393000
+Z20 !s108 1576110573.756000
 Z21 !s107 C:/fpga/pipelined_computer/source/dff1.v|
 !i10b 1
 !s85 0
@@ -55,7 +55,7 @@ r1
 31
 Z28 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff32.v|
 R10
-Z29 !s108 1575028325.605000
+Z29 !s108 1576110573.981000
 Z30 !s107 C:/fpga/pipelined_computer/source/dff32.v|
 !i10b 1
 !s85 0
@@ -74,7 +74,7 @@ r1
 31
 Z37 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff4.v|
 R10
-Z38 !s108 1575028325.460000
+Z38 !s108 1576110573.839000
 Z39 !s107 C:/fpga/pipelined_computer/source/dff4.v|
 !i10b 1
 !s85 0
@@ -93,7 +93,7 @@ r1
 31
 Z46 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dff5.v|
 R10
-Z47 !s108 1575028325.528000
+Z47 !s108 1576110573.910000
 Z48 !s107 C:/fpga/pipelined_computer/source/dff5.v|
 !i10b 1
 !s85 0
@@ -112,7 +112,7 @@ r1
 31
 Z55 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/dffe32.v|
 R10
-Z56 !s108 1575028325.671000
+Z56 !s108 1576110574.052000
 Z57 !s107 C:/fpga/pipelined_computer/source/dffe32.v|
 !i10b 1
 !s85 0
@@ -131,7 +131,7 @@ r1
 31
 Z64 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v|
 R10
-Z65 !s108 1575028325.739000
+Z65 !s108 1576110574.124000
 Z66 !s107 C:/fpga/pipelined_computer/source/lpm_ram_dq_dram.v|
 !i10b 1
 !s85 0
@@ -150,7 +150,7 @@ r1
 31
 Z73 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/lpm_rom_irom.v|
 R10
-Z74 !s108 1575028325.811000
+Z74 !s108 1576110574.197000
 Z75 !s107 C:/fpga/pipelined_computer/source/lpm_rom_irom.v|
 !i10b 1
 !s85 0
@@ -169,7 +169,7 @@ r1
 31
 Z82 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux2x32.v|
 R10
-Z83 !s108 1575028325.960000
+Z83 !s108 1576110574.350000
 Z84 !s107 C:/fpga/pipelined_computer/source/mux2x32.v|
 !i10b 1
 !s85 0
@@ -188,7 +188,7 @@ r1
 31
 Z91 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux2x5.v|
 R10
-Z92 !s108 1575028325.885000
+Z92 !s108 1576110574.279000
 Z93 !s107 C:/fpga/pipelined_computer/source/mux2x5.v|
 !i10b 1
 !s85 0
@@ -207,7 +207,7 @@ r1
 31
 Z100 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/mux4x32.v|
 R10
-Z101 !s108 1575028326.030000
+Z101 !s108 1576110574.426000
 Z102 !s107 C:/fpga/pipelined_computer/source/mux4x32.v|
 !i10b 1
 !s85 0
@@ -226,7 +226,7 @@ r1
 31
 Z109 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_cu.v|
 R10
-Z110 !s108 1575028326.103000
+Z110 !s108 1576110574.508000
 Z111 !s107 C:/fpga/pipelined_computer/source/pipe_cu.v|
 !i10b 1
 !s85 0
@@ -245,7 +245,7 @@ r1
 31
 Z118 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_datamem.v|
 R10
-Z119 !s108 1575028326.176000
+Z119 !s108 1576110574.583000
 Z120 !s107 C:/fpga/pipelined_computer/source/pipe_datamem.v|
 !i10b 1
 !s85 0
@@ -264,7 +264,7 @@ r1
 31
 Z127 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipe_instmem.v|
 R10
-Z128 !s108 1575028326.244000
+Z128 !s108 1576110574.666000
 Z129 !s107 C:/fpga/pipelined_computer/source/pipe_instmem.v|
 !i10b 1
 !s85 0
@@ -283,7 +283,7 @@ r1
 31
 Z136 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipedereg.v|
 R10
-Z137 !s108 1575028326.313000
+Z137 !s108 1576110574.741000
 Z138 !s107 C:/fpga/pipelined_computer/source/pipedereg.v|
 !i10b 1
 !s85 0
@@ -302,7 +302,7 @@ r1
 31
 Z145 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeemreg.v|
 R10
-Z146 !s108 1575028326.381000
+Z146 !s108 1576110574.806000
 Z147 !s107 C:/fpga/pipelined_computer/source/pipeemreg.v|
 !i10b 1
 !s85 0
@@ -321,7 +321,7 @@ r1
 31
 Z154 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeexe.v|
 R10
-Z155 !s108 1575028326.449000
+Z155 !s108 1576110574.880000
 Z156 !s107 C:/fpga/pipelined_computer/source/pipeexe.v|
 !i10b 1
 !s85 0
@@ -340,7 +340,7 @@ r1
 31
 Z163 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeid.v|
 R10
-Z164 !s108 1575028326.520000
+Z164 !s108 1576110574.987000
 Z165 !s107 C:/fpga/pipelined_computer/source/pipeid.v|
 !i10b 1
 !s85 0
@@ -359,7 +359,7 @@ r1
 31
 Z172 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeif.v|
 R10
-Z173 !s108 1575028326.599000
+Z173 !s108 1576110575.072000
 Z174 !s107 C:/fpga/pipelined_computer/source/pipeif.v|
 !i10b 1
 !s85 0
@@ -378,7 +378,7 @@ r1
 31
 Z181 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipeir.v|
 R10
-Z182 !s108 1575028326.671000
+Z182 !s108 1576110575.146000
 Z183 !s107 C:/fpga/pipelined_computer/source/pipeir.v|
 !i10b 1
 !s85 0
@@ -397,7 +397,7 @@ r1
 31
 Z190 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipelined_computer.v|
 R10
-Z191 !s108 1575028326.738000
+Z191 !s108 1576110575.220000
 Z192 !s107 C:/fpga/pipelined_computer/source/pipelined_computer.v|
 !i10b 1
 !s85 0
@@ -408,7 +408,7 @@ vpipelined_computer_sim
 I8m]Y5oB`Oifz=O:UJlgh`0
 Z193 VKng3S<C`dU>icI4`V1hB^0
 R4
-w1575028320
+w1576110563
 Z194 8C:/fpga/pipelined_computer/source/pipelined_computer_sim.v
 Z195 FC:/fpga/pipelined_computer/source/pipelined_computer_sim.v
 L0 26
@@ -416,7 +416,7 @@ R8
 r1
 !s85 0
 31
-!s108 1575028327.089000
+!s108 1576110575.567000
 !s107 C:/fpga/pipelined_computer/source/pipelined_computer_sim.v|
 Z196 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipelined_computer_sim.v|
 !s101 -O0
@@ -435,7 +435,7 @@ r1
 31
 Z203 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipemem.v|
 R10
-Z204 !s108 1575028326.808000
+Z204 !s108 1576110575.291000
 Z205 !s107 C:/fpga/pipelined_computer/source/pipemem.v|
 !i10b 1
 !s85 0
@@ -454,7 +454,7 @@ r1
 31
 Z212 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipemwreg.v|
 R10
-Z213 !s108 1575028326.875000
+Z213 !s108 1576110575.358000
 Z214 !s107 C:/fpga/pipelined_computer/source/pipemwreg.v|
 !i10b 1
 !s85 0
@@ -473,7 +473,7 @@ r1
 31
 Z221 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/pipepc.v|
 R10
-Z222 !s108 1575028326.942000
+Z222 !s108 1576110575.427000
 Z223 !s107 C:/fpga/pipelined_computer/source/pipepc.v|
 !i10b 1
 !s85 0
@@ -494,6 +494,6 @@ Z230 !s90 -reportprogress|300|-work|work|C:/fpga/pipelined_computer/source/regfi
 R10
 !i10b 1
 !s85 0
-Z231 !s108 1575028327.011000
+Z231 !s108 1576110575.493000
 Z232 !s107 C:/fpga/pipelined_computer/source/regfile.v|
 !s101 -O0
