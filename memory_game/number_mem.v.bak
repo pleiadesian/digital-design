@@ -1,0 +1,21 @@
+module number_mem (rn, d, wn, we, clk, clrn, num);
+   input [3:0] rn, wn;
+   input [9:0] d;
+   input we, clk, clrn;
+   output [9:0] num;
+   
+   reg [9:0] register [0:9];
+   
+	assign num = register[rn];
+
+   always @(posedge clk or negedge clrn) begin
+      if (clrn == 0) begin: reset // reset
+			integer i;
+         for (i=0; i<10; i=i+1)
+            register[i] <= 0;
+      end else begin
+         if (we == 1)          // write
+            register[wn] <= d;
+      end
+   end
+endmodule 

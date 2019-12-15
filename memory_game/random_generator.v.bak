@@ -1,0 +1,20 @@
+module random_generator (clock, game_clk, resetn, rand);
+	input		game_clk, resetn;
+	output 	[9:0] rand;
+	wire 		[9:0] rand;
+	reg		[31:0] cnt;
+	
+	initial begin
+		rand <= 10'b0;
+	end
+	
+	always @ (posedge game_clk or negedge resetn)
+		begin
+			if (!resetn) begin
+				rand <= 10'b0;
+			end
+			else begin
+				
+			end
+		end
+endmodule 

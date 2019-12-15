@@ -1,0 +1,5 @@
+module game_start (start_key, game_clk, resetn, led);
+	input 			start_key, game_clk, resetn;
+	output [9:0]	led;
+	
+endmodule 
