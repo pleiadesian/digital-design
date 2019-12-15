@@ -1,0 +1,22 @@
+C:/fpga/memory_game/random_generator.v {1 {vlog -work work C:/fpga/memory_game/random_generator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module random_generator
+
+Top level modules:
+	random_generator
+
+} {} {}} C:/fpga/memory_game/number_mem.v {1 {vlog -work work C:/fpga/memory_game/number_mem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module number_mem
+
+Top level modules:
+	number_mem
+
+} {} {}} C:/fpga/memory_game/sevenseg.v {1 {vlog -work work C:/fpga/memory_game/sevenseg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sevenseg
+
+Top level modules:
+	sevenseg
+
+} {} {}}

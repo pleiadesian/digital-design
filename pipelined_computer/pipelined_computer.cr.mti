@@ -26,6 +26,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	pipeemreg
 
+} {} {}} C:/fpga/pipelined_computer/source/pipelined_computer_sim.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipelined_computer_sim.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pipelined_computer_sim
+
+Top level modules:
+	pipelined_computer_sim
+
 } {} {}} C:/fpga/pipelined_computer/source/pipemwreg.v {1 {vlog -work work C:/fpga/pipelined_computer/source/pipemwreg.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module pipemwreg

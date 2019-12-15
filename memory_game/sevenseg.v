@@ -1,8 +1,13 @@
 module sevenseg (data, ledsegments, display_digit);
 	input				display_digit;
-	input 	[3:0] data;
-	output 			ledsegments;
+	input 	[6:0] data;
+	output 	[6:0]	ledsegments;
 	reg 		[6:0] ledsegments;
+	
+	initial begin
+		ledsegments = 7'b111_1111;
+	end
+	
 	always @ (*)
 		if (display_digit == 1) begin
 			case(data)

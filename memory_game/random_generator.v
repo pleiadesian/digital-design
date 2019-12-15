@@ -1,15 +1,16 @@
 // take least 10 bits of board clock as random number
-module random_generator (clock, game_clk, resetn, rand);
-	input		game_clk, resetn;
-	output 	[9:0] rand;
+module random_generator (clk, game_clk, resetn, randnum);
+	input		clk, game_clk, resetn;
+	output 	[9:0] randnum;
+	reg		[9:0]	randnum;
 	reg		[31:0] cnt;
 	
 	initial begin
-		rand <= 10'b0;
+		randnum <= 10'b0;
 		cnt <= 0;
 	end
 	
-	always @ (posedge clock or negedge resetn)
+	always @ (posedge clk or negedge resetn)
 		begin
 			if (!resetn) begin
 				cnt <= 0;
@@ -22,10 +23,10 @@ module random_generator (clock, game_clk, resetn, rand);
 	always @ (posedge game_clk or negedge resetn)
 		begin
 			if (!resetn) begin
-				rand <= 10'b0;
+				randnum <= 10'b0;
 			end
 			else begin
-				rand <= cnt[9:0];
+				randnum <= cnt[15:6];
 			end
 		end
 endmodule 
