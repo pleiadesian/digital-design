@@ -43,7 +43,7 @@ module game_start (start_key, rand, clk, game_clk, resetn, d, wn, we, led);
 		end
 	
 	// game start
-	always @ (posedge game_clk or negedge resetn)
+	always @ (negedge game_clk or negedge resetn)
 		begin
 			if (!resetn) begin
 				display_num <= 0;
