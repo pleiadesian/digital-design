@@ -8,7 +8,7 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data,alua,alub);
    wire [3:0]    aluc;
    wire [4:0]    reg_dest,wn;
    wire [1:0]    pcsource;
-   wire          zero,wmem,wreg,regrt,m2reg,shift,aluimm,jal,sext;
+   wire          zero,wmem,wreg,regrt,m2reg,shift,aluimm,jal,sext,le;
    wire [31:0]   sa = { 27'b0, inst[10:6] }; // extend to 32 bits from sa for shift instruction
    wire          e = sext & inst[15];          // positive or negative sign at sext signal
    wire [15:0]   imm = {16{e}};                // high 16 sign bit
@@ -26,7 +26,7 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data,alua,alub);
    wire [31:0] jpc = {p4[31:28],inst[25:0],1'b0,1'b0}; // j address 
    
    sc_cu cu (inst[31:26],inst[5:0],zero,wmem,wreg,regrt,m2reg,
-                        aluc,shift,aluimm,pcsource,jal,sext);
+                        aluc,shift,aluimm,pcsource,jal,sext,le);
                         
                         
    mux2x32 alu_b (data,immediate,aluimm,alub);
@@ -37,5 +37,5 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data,alua,alub);
    assign wn = reg_dest | {5{jal}}; // jal: r31 <-- p4;      // 31 or reg_dest
    mux4x32 nextpc(p4,adr,ra,jpc,pcsource,npc);
    regfile rf (inst[25:21],inst[20:16],res,wn,wreg,clock,resetn,ra,data);
-   alu al_unit (alua,alub,aluc,alu,zero);
+   alu al_unit (alua,alub,aluc,alu,zero,le);
 endmodule

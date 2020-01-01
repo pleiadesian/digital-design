@@ -1,12 +1,12 @@
-module alu (a,b,aluc,s,z);
+module alu (a,b,aluc,s,z,le);
    input [31:0] a,b;
    input [3:0] aluc;
    output [31:0] s;
-   output        z;
+   output        z,le;
    reg [31:0] s;
 	wire [31:0] temp;
 	wire [31:0] sum;
-   reg        z;
+   reg        z,le;
 	
 	// hamming distance
 	assign temp = a ^ b;
@@ -29,7 +29,16 @@ module alu (a,b,aluc,s,z);
              4'b0011: s = b << a;				 //0011 SLL: rd <- (rt << sa)
              4'b0111: s = b >> a;				 //0111 SRL: rd <- (rt >> sa) (logical)
              4'b1111: s = $signed(b) >>> a;   //1111 SRA: rd <- (rt >> sa) (arithmetic)
-				 4'b1011: s = a * a;					 // TODO: inst ALU logic
+				 4'b1011: 
+					begin
+						s = 0;
+						if (a <= b) begin
+							le = 1;
+						end
+						else begin
+							le = 0;
+						end
+					end  // TODO: inst ALU logic
              default: s = 0;
          endcase
          if (s == 0 )  z = 1;
