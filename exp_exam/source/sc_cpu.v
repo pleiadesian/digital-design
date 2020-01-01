@@ -1,7 +1,7 @@
-module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data);
+module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data,alua,alub);
    input [31:0] inst,mem;
    input clock,resetn;
-   output [31:0] pc,alu,data;
+   output [31:0] pc,alu,data,alua,alub;
    output wmem;
    
    wire [31:0]   p4,bpc,npc,adr,ra,alua,alub,res,alu_mem;

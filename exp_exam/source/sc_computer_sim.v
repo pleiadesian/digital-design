@@ -36,7 +36,7 @@ module sc_computer_sim;
 	 
 	 wire   [31:0]  pc_sim,inst_sim,aluout_sim,memout_sim;
     wire           imem_clk_sim,dmem_clk_sim;
-    wire   [31:0]  data_sim;
+    wire   [31:0]  data_sim,alua_sim,alub_sim;
     wire           wmem_sim;   // connect the cpu and dmem. 
 	 
 	 wire				 clk_t_sim, clk_2t_sim;
@@ -45,13 +45,14 @@ module sc_computer_sim;
 	 initial
 		begin
 			key_sim <= 3'b111;
-			sw_sim <= 10'b0101110110;
+			// sw_sim <= 10'b0101110110;
+			sw_sim <= 10'b0000000010;
 		end
 	 
     sc_computer_main    sc_computer_instance (resetn_sim,clock_50M_sim,mem_clk_sim,pc_sim,inst_sim,
 														aluout_sim,memout_sim,imem_clk_sim,dmem_clk_sim,
 														key_sim,data_sim,wmem_sim,sw_sim,hex5_sim,hex4_sim,
-														hex3_sim,hex2_sim,hex1_sim,hex0_sim,led_sim);
+														hex3_sim,hex2_sim,hex1_sim,hex0_sim,led_sim, alua_sim, alub_sim);
 	clock_cpu					clock_cpu_instance(clock_50M_sim, resetn_sim, clk_t_sim, clk_2t_sim);
 															
 	 initial
