@@ -29,16 +29,16 @@ module alu (a,b,aluc,s,z,le);
              4'b0011: s = b << a;				 //0011 SLL: rd <- (rt << sa)
              4'b0111: s = b >> a;				 //0111 SRL: rd <- (rt >> sa) (logical)
              4'b1111: s = $signed(b) >>> a;   //1111 SRA: rd <- (rt >> sa) (arithmetic)
-				 4'b1011: 
-					begin
-						s = 0;
-						if (a <= b) begin
-							le = 1;
-						end
-						else begin
-							le = 0;
-						end
-					end  // TODO: inst ALU logic
+				 4'b1011: s = sum;
+					// begin
+					// 	s = 0;
+					// 	if (a <= b) begin
+					// 		le = 1;
+					// 	end
+					// 	else begin
+					// 		le = 0;
+					// 	end
+					// end  // TODO: inst ALU logic
              default: s = 0;
          endcase
          if (s == 0 )  z = 1;

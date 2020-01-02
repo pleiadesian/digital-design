@@ -28,8 +28,8 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
                 ~func[2] & func[1] & func[0];          	//000011
    wire i_jr  = r_type & ~func[5] & ~func[4] & func[3] &
                 ~func[2] & ~func[1] & ~func[0];          //001000
-	//wire i_sqrt = r_type & ~func[5] & ~func[4] & ~func[3] &
-   //             ~func[2] & ~func[1] & func[0];				// TODO: r inst decode
+	wire i_hamd = r_type & ~func[5] & ~func[4] & ~func[3] &
+                ~func[2] & ~func[1] & func[0];				// TODO: r inst decode
                 
    wire i_addi = ~op[5] & ~op[4] &  op[3] & ~op[2] & ~op[1] & ~op[0]; //001000
    wire i_andi = ~op[5] & ~op[4] &  op[3] &  op[2] & ~op[1] & ~op[0]; //001100
@@ -43,29 +43,29 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    wire i_lui  = ~op[5] & ~op[4] &  op[3] &  op[2] &  op[1] &  op[0]; //001111
    wire i_j    = ~op[5] & ~op[4] & ~op[3] & ~op[2] &  op[1] & ~op[0]; //000010
    wire i_jal  = ~op[5] & ~op[4] & ~op[3] & ~op[2] &  op[1] &  op[0]; //000011
-	wire i_ble  = ~op[5] & ~op[4] & ~op[3] & ~op[2] & ~op[1] &  op[0]; // TODO: not r inst decode
+	// wire i_ble  = ~op[5] & ~op[4] & ~op[3] & ~op[2] & ~op[1] &  op[0]; // TODO: not r inst decode
    
   
 	// TODO: inst decode logic
    assign pcsource[1] = i_jr | i_j | i_jal;
-   assign pcsource[0] = ( i_beq & z ) | (i_bne & ~z) | i_j | i_jal | ( i_ble & le ); // TODO: control flow
+   assign pcsource[0] = ( i_beq & z ) | (i_bne & ~z) | i_j | i_jal; //| ( i_ble & le ); // TODO: control flow
    
    assign wreg = i_add | i_sub | i_and | i_or   | i_xor  |
                  i_sll | i_srl | i_sra | i_addi | i_andi |
-                 i_ori | i_xori | i_lw | i_lui  | i_jal;
+                 i_ori | i_xori | i_lw | i_lui  | i_jal | i_hamd;
    
-   assign aluc[3] = i_sra | i_ble;
+   assign aluc[3] = i_sra | i_hamd;
    assign aluc[2] = i_sub | i_or  | i_srl | i_sra | i_ori |
 						  i_beq | i_bne | i_lui;
    assign aluc[1] = i_xor | i_sll | i_srl | i_sra | i_xori |
-						  i_lui | i_ble;
+						  i_lui | i_hamd;
    assign aluc[0] = i_and | i_or  | i_sll | i_srl | i_sra |
-						  i_andi | i_ori | i_ble;
+						  i_andi | i_ori | i_hamd;
    assign shift   = i_sll | i_srl | i_sra ;
 
    assign aluimm  = i_addi | i_andi | i_ori | i_xori | i_lw |
 						  i_sw  | i_lui;
-   assign sext    = i_addi | i_lw  | i_sw  | i_beq | i_bne | i_ble;
+   assign sext    = i_addi | i_lw  | i_sw  | i_beq | i_bne; //| i_ble;
    assign wmem    = i_sw;
    assign m2reg   = i_lw;
    assign regrt   = i_addi | i_andi | i_ori | i_xori | i_lw |

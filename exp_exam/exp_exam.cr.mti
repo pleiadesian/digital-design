@@ -40,6 +40,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	lpm_rom_irom
 
+} {} {}} C:/fpga/exp_exam/source/sc_cpu.v {1 {vlog -work work C:/fpga/exp_exam/source/sc_cpu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_cpu
+
+Top level modules:
+	sc_cpu
+
 } {} {}} C:/fpga/exp_exam/source/regfile.v {1 {vlog -work work C:/fpga/exp_exam/source/regfile.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module regfile

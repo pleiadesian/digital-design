@@ -7,8 +7,8 @@ INST_R = {"add":"100000",
           "sll":"000000",
           "srl":"000010",
           "sra":"000011",
-          "jr" :"001000"}  # ,
-          # "sqrt":"000001"}  # TODO:new inst op
+          "jr" :"001000",
+          "hamd":"000001"}  # TODO:new inst op
 
 # op for Inst_I and Inst_J
 INST_I = {"addi":"001000",
@@ -19,8 +19,8 @@ INST_I = {"addi":"001000",
           "sw"  :"101011",
           "beq" :"000100",
           "bne" :"000101",
-          "lui" :"001111",
-          "ble" :"000001"}
+          "lui" :"001111"}  # ,
+          # "ble" :"000001"}
 
 INST_J = {"j"  :"000010",
           "jal":"000011"}
@@ -63,6 +63,10 @@ def parseRinst(line_num, parts):
         rd = decodeR(line_num, parts[1])
         rs = decodeR(line_num, parts[2])
         rt = decodeR(line_num, parts[3])
+    if (parts[0] == 'hamd'):
+        rd = decodeR(line_num, parts[1])
+        rs = decodeR(line_num, parts[2])
+        rt = decodeR(line_num, parts[3])
     # if (parts[0] == 'sqrt'):
     #     rd = decodeR(line_num, parts[1])
     #     rs = decodeR(line_num, parts[2])
@@ -78,7 +82,7 @@ def parseIinst(line_num, parts):
         rt = decodeR(line_num, parts[1])
         imm = decodeIMM(line_num, parts[2])
         return op + rs + rt + imm
-    elif (parts[0] == 'bne' or parts[0] == 'beq' or parts[0] == 'ble'):
+    elif (parts[0] == 'bne' or parts[0] == 'beq'):  # or parts[0] == 'ble'):
         rs = decodeR(line_num, parts[1])
         rt = decodeR(line_num, parts[2])
         imm = decodeIMM(line_num, parts[3])
