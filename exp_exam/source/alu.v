@@ -16,6 +16,7 @@ module alu (a,b,aluc,s,z,le);
 					temp[13] + temp[12] + temp[11] + temp[10] + temp[9] + temp[8] +
 					temp[7] + temp[6] + temp[5] + temp[4] + temp[3] + temp[2] +
 					temp[1] + temp[0];
+	assign ltbit = (a >= b);
 	
    always @ (a or b or aluc) 
       begin                                   // event
@@ -29,7 +30,7 @@ module alu (a,b,aluc,s,z,le);
              4'b0011: s = b << a;				 //0011 SLL: rd <- (rt << sa)
              4'b0111: s = b >> a;				 //0111 SRL: rd <- (rt >> sa) (logical)
              4'b1111: s = $signed(b) >>> a;   //1111 SRA: rd <- (rt >> sa) (arithmetic)
-				 4'b1011: s = sum;
+				 4'b1011: s = ltbit;
 					// begin
 					// 	s = 0;
 					// 	if (a <= b) begin

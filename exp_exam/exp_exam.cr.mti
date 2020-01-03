@@ -1,4 +1,11 @@
-C:/fpga/exp_exam/source/dff32.v {1 {vlog -work work C:/fpga/exp_exam/source/dff32.v
+C:/fpga/exp_exam/source/sc_cu.v {1 {vlog -work work C:/fpga/exp_exam/source/sc_cu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sc_cu
+
+Top level modules:
+	sc_cu
+
+} {} {}} C:/fpga/exp_exam/source/dff32.v {1 {vlog -work work C:/fpga/exp_exam/source/dff32.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module dff32
 
@@ -18,6 +25,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	clock_cpu
+
+} {} {}} C:/fpga/exp_exam/source/alu.v {1 {vlog -work work C:/fpga/exp_exam/source/alu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
 
 } {} {}} C:/fpga/exp_exam/source/sc_instmen.v {1 {vlog -work work C:/fpga/exp_exam/source/sc_instmen.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

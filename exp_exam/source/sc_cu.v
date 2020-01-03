@@ -28,7 +28,7 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
                 ~func[2] & func[1] & func[0];          	//000011
    wire i_jr  = r_type & ~func[5] & ~func[4] & func[3] &
                 ~func[2] & ~func[1] & ~func[0];          //001000
-	wire i_hamd = r_type & ~func[5] & ~func[4] & ~func[3] &
+	wire i_lt = r_type & ~func[5] & ~func[4] & ~func[3] &
                 ~func[2] & ~func[1] & func[0];				// TODO: r inst decode
                 
    wire i_addi = ~op[5] & ~op[4] &  op[3] & ~op[2] & ~op[1] & ~op[0]; //001000
@@ -52,15 +52,15 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    
    assign wreg = i_add | i_sub | i_and | i_or   | i_xor  |
                  i_sll | i_srl | i_sra | i_addi | i_andi |
-                 i_ori | i_xori | i_lw | i_lui  | i_jal | i_hamd;
+                 i_ori | i_xori | i_lw | i_lui  | i_jal | i_lt;
    
-   assign aluc[3] = i_sra | i_hamd;
+   assign aluc[3] = i_sra | i_lt;
    assign aluc[2] = i_sub | i_or  | i_srl | i_sra | i_ori |
 						  i_beq | i_bne | i_lui;
    assign aluc[1] = i_xor | i_sll | i_srl | i_sra | i_xori |
-						  i_lui | i_hamd;
+						  i_lui | i_lt;
    assign aluc[0] = i_and | i_or  | i_sll | i_srl | i_sra |
-						  i_andi | i_ori | i_hamd;
+						  i_andi | i_ori | i_lt;
    assign shift   = i_sll | i_srl | i_sra ;
 
    assign aluimm  = i_addi | i_andi | i_ori | i_xori | i_lw |

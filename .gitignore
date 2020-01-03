@@ -3,3 +3,4 @@ output_files/
 incremental_db/
 hc_output/
 work/
+*.zip

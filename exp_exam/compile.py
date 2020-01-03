@@ -8,7 +8,7 @@ INST_R = {"add":"100000",
           "srl":"000010",
           "sra":"000011",
           "jr" :"001000",
-          "hamd":"000001"}  # TODO:new inst op
+          "lt":"000001"}  # TODO:new inst op
 
 # op for Inst_I and Inst_J
 INST_I = {"addi":"001000",
@@ -63,7 +63,7 @@ def parseRinst(line_num, parts):
         rd = decodeR(line_num, parts[1])
         rs = decodeR(line_num, parts[2])
         rt = decodeR(line_num, parts[3])
-    if (parts[0] == 'hamd'):
+    if (parts[0] == 'lt'):
         rd = decodeR(line_num, parts[1])
         rs = decodeR(line_num, parts[2])
         rt = decodeR(line_num, parts[3])
